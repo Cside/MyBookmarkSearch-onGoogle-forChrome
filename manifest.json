@@ -1,15 +1,18 @@
 {
   "name": "My Hatena Bookmark Search on Google",
   "description": "（はてなブックマークプラスユーザーのみ）Googleの検索結果に自分のブックマークからの全文検索の結果を表示",
-  "background_page": "background.html",
+  "background": {
+    "page": "background.html"
+  },
   "content_scripts": [
     {
       "js": [ "contentscript.js" ],
       "css": [ "style.css" ],
       "run_at": "document_end",
-      "matches": [ "http://www.google.co.jp/*" ]
+      "matches": [ "http://www.google.co.jp/*",   "https://www.google.co.jp/*"]
     }
   ],
+  "manifest_version":2,
   "version": "0.2",
   "update_url": "http://cske.sakura.ne.jp/work/hatebu_chrome/updates.xml",
 
