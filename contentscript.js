@@ -171,7 +171,7 @@ SearchResults.prototype = {
         this.rhs.appendChild( rhsBlock );
     },
     insert : function() {
-        var leftNav = document.querySelector('#leftnav');
+        var leftNav = document.querySelector('#res');
         leftNav.parentNode.insertBefore(this.rhs, leftNav);
     },
 };

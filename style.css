@@ -9,7 +9,8 @@ body, td, div, .p, a {
 #rhs {
     border-left:1px solid #D3E1F9;
     display:block;
-    position:absolute;
+    position:absolute !important;
+    left: 0px;
     right:0;
     top:0;
     width:264px;
